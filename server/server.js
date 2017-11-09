@@ -10,7 +10,7 @@ mongoose.connect('mongodb://alc-test:password@ds249355.mlab.com:49355/students',
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
-const student = require('../routes/student');
+const student = require('../react-ui/routes/student');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
