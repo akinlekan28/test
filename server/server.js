@@ -1,5 +1,16 @@
 const express = require('express');
 const path = require('path');
+const logger = require('morgan');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
+mongoose.Promise = require('bluebird');
+
+mongoose.connect('mongodb://alc-test:password@ds249355.mlab.com:49355/students', { useMongoClient: true, promiseLibrary: require('bluebird') })
+  .then(() =>  console.log('connection succesful'))
+  .catch((err) => console.error(err));
+
+const student = require('../routes/student');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
