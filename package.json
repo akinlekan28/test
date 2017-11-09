@@ -1,0 +1,26 @@
+{
+  "name": "alc",
+  "version": "1.0.0",
+  "description": "alc-test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "heroku-postbuild": "cd react-ui/ && npm install --only=dev && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akinlekan28/test.git"
+  },
+  "keywords": [
+    "alc-test"
+  ],
+  "author": "akintola olalekan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akinlekan28/test/issues"
+  },
+  "homepage": "https://github.com/akinlekan28/test#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
