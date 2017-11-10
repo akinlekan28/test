@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-var Student = require('./models/Student.js');
+var Student = require('../models/Student.js');
 
 /* GET ALL STUDENT */
 router.get('/', function(req, res, next) {
