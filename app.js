@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://<alc-test>:<password>@ds249355.mlab.com:49355/students', { useMongoClient: true, promiseLibrary: require('bluebird') })
+mongoose.connect('mongodb://alc-test:password@ds249355.mlab.com:49355/students', { useMongoClient: true, promiseLibrary: require('bluebird') })
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
