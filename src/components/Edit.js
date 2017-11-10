@@ -15,7 +15,7 @@ class Edit extends Component {
     axios.get('/api/student/'+this.props.match.params.id)
       .then(res => {
         this.setState({ student: res.data });
-        console.log(this.state.student);
+        // console.log(this.state.student);
       });
   }
 

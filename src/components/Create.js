@@ -46,7 +46,7 @@ class Create extends Component {
               ADD STUDENT
             </h3>
           </div>
-          <div class="panel-body col-md-7">
+          <div class="panel-body col-md-7 col-md-offset-3">
             <h4><Link to="/"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Student List</Link></h4>
             <form onSubmit={this.onSubmit}>
               <div class="form-group">
@@ -94,7 +94,7 @@ class Create extends Component {
                 <input type="date" class="form-control" name="dob" value={dob} onChange={this.onChange} placeholder="dob" />
               </div>
 
-              <button type="submit" class="btn btn-success">Submit</button>
+              <button type="submit" class="btn btn-success col-md-offset-5">Submit</button>
             </form>
           </div>
         </div>

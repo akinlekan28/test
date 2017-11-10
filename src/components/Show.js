@@ -15,7 +15,7 @@ class Show extends Component {
     axios.get('/api/student/'+this.props.match.params.id)
       .then(res => {
         this.setState({ student: res.data });
-        console.log(this.state.student);
+        // console.log(this.state.student);
       });
   }
 
@@ -36,8 +36,8 @@ class Show extends Component {
               {this.state.student.firstname} {this.state.student.lastname} Bio Data
             </h3>
           </div>
-          <div class="panel-body">
-            <h4><Link to="/"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>All Student</Link></h4>
+          <h4><Link to="/"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>All Student</Link></h4>
+          <div class="panel-body col-md-7 col-md-offset-3">
             <br/>
             <dl>
               <dt>Department:</dt>
